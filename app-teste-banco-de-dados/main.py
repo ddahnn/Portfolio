@@ -110,4 +110,7 @@ else:
 
     # Fechar a conexão com o banco de dados
     conn.close()
-    
+
+
+
+#feito por Daniel luis
