@@ -63,3 +63,10 @@ plot_image(i, predictions[i], test_labels, test_images)
 plt.subplot(1,2,2)
 plot_value_array(i, predictions[i], test_labels)
 plt.show()
+
+
+
+
+'''Criado por Daniel Luis'''
+
+'''E-mail para contato ddahnn@gmail.com'''
