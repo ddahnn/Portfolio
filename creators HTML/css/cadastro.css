@@ -1,0 +1,212 @@
+/************************************************/
+/***************base pagina**********************/
+/************************************************/
+
+/* Zerar as propriedades de espaçamento de todos os elementos */
+* {
+  padding: 0;
+  margin: 0;
+  
+}
+
+/* Definir estilo base para o HTML */
+html {
+  font-family: sans-serif, verdana, arial; /* Definir a família de fontes padrão */
+  font-size: 16px; /* Definir o tamanho da fonte padrão */
+}
+
+/* Estilo para o container principal */
+.container {
+  background-color: lightslategray; /* Definir a cor de fundo */
+  min-width: 800px; /* Largura mínima do container */
+  max-width: 1200px; /* Largura máxima do container */
+  margin: 0 auto; /* Centralizar o container na página */
+}
+
+/************************************************/
+/**********************HEADER********************/
+/************************************************/
+/* Estilo para o cabeçalho */
+
+}
+
+/* Define a altura do item e ajusta outras propriedades */
+header {
+  background-color: #51ABE7; /* Cor de fundo do cabeçalho */
+  height: 170px; /* Altura do cabeçalho */
+  width: 100% /* Largura máxima do cabeçalho */
+}
+
+/* Estilo para a figura do logo */
+header figure {
+  padding: 0px 30px; /* Espaçamento interno da figura */
+  height: 100px; /* Altura da figura */
+  width: 200px; /* Largura da figura */
+  margin-right: 0; /* Remover margem direita */
+  padding-right: 0; /* Remover padding direito */
+  float: left; /* Alinhar à esquerda */
+  margin-top: 15px; /* Margem superior */
+}
+
+/* Estilo para a imagem do logo */
+header figure img {
+  height: 100px; /* Altura da imagem */
+  width: 100%; /* Largura da imagem */
+}
+
+/* Estilo para o menu de navegação */
+nav {
+  background-color: #2E6081; /* Cor de fundo do menu de navegação */
+  height: 40px; /* Altura do menu de navegação */
+  display: inline-block; /* Exibir em linha */
+  width: 100%; /* Largura total */
+  margin-top: 15px; /* Margem superior */
+}
+
+/* Estilo para os itens da lista de navegação */
+nav ul li {
+  list-style: none; /* Remover estilo de lista */
+  display: inline-block; /* Exibir em linha */
+  padding: 12px; /* Espaçamento interno */
+  padding-left: 35px; /* Espaçamento à esquerda */
+}
+
+/* Estilo para os links da navegação */
+nav ul li a:link,
+nav ul li a:visited {
+  padding: 0 10px; /* Espaçamento interno dos links */
+  width: 80px; /* Largura dos links */
+  background-color: #12374f; /* Cor de fundo dos links */
+  text-decoration: none; /* Remover sublinhado */
+  text-align: center; /* Centralizar texto */
+  color: #fff; /* Cor do texto */
+  font-weight: bold; /* Texto em negrito */
+  border-radius: 15%; /* Bordas arredondadas */
+}
+
+/************************************************/
+/**********************MAIN**********************/
+/************************************************/
+/* Estilo para a seção de cadastro */
+.cadastro {
+  background-color: #51ABE7; /* Cor de fundo da seção de cadastro */
+  text-align: center; /* Centralizar texto */
+}
+
+/* Estilo para o título de cadastro */
+.cadastro h1 {
+  padding: 0 10px; /* Espaçamento interno do título */
+  color: white; /* Cor do texto do título */
+}
+
+/* Estilo para as seções pessoal e endereço */
+.pessoal,
+.endereco {
+  text-align: left;
+}
+
+/* Estilo para os fieldsets */
+.pessoal fieldset,
+.endereco fieldset,
+.interesse fieldset,
+.termos fieldset{
+  border-color: black; /* Cor da borda dos fieldsets */
+  width: 99.5%; /* Largura dos fieldsets */
+  margin: 0 auto 10px; /* Margem inferior e centralizar */
+  text-align: center; /* Centralizar texto */
+}
+
+/* Estilo para os legends dos fieldsets */
+.pessoal fieldset legend,
+.endereco fieldset legend {
+  color: black; /* Cor do texto */
+  padding: 5px; /* Espaçamento interno */
+  font-size: 25px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilo para os labels dos fieldsets */
+.pessoal fieldset label{
+  padding-left:25px;
+  margin: 10px 0; /* Margem vertical */
+  color: #000000; /* Cor do texto */
+}
+.endereco fieldset label {
+  padding-left:10px;
+  margin: 10px 0; /* Margem vertical */
+  color: #000000; /* Cor do texto */
+}
+
+/* Estilo para os inputs e selects dos fieldsets */
+.pessoal fieldset input,
+.endereco fieldset input,
+.pessoal fieldset select {
+  width: 200px; /* Largura dos inputs e selects */
+  height: 20px; /* Altura dos inputs e selects */
+  margin: 5px 0; /* Margem vertical */
+}
+
+
+
+/* Estilo para a seção de interesses */
+.interesse {
+ /*  background-color: #ff0000; */ /* Cor de fundo da seção de interesses */
+  text-align: center; /* Centralizar texto */
+}
+
+
+
+.interesse fieldset legend{
+  color: black;
+  padding: 5px; 
+  font-size: 25px; 
+  font-weight: bold; 
+}
+.interesse fieldset label{
+  color:#000000;
+  font-size:20px;
+}
+.interesse fieldset input{
+  padding-right: 15px;
+}
+
+
+.termos fieldset legend{
+  color: black;
+  padding: 5px; 
+  font-size: 25px; 
+  font-weight: bold;
+}
+.termos fieldset label{
+  color:#000000;
+  font-size:20px;
+}
+.termos fieldset input{
+  padding-right: 15px;
+}
+/* Estilo para o botão */
+#botao {
+  margin: 0 48%; /* Centralizar botão horizontalmente */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para o rodapé */
+footer {
+  background-color: #2E6081; /* Cor de fundo do rodapé */
+  height: 40px; /* Altura do rodapé */
+  text-align: right; /* Alinhar texto à direita */
+  color: #fff; /* Cor do texto */
+  line-height: 40px; /* Centralizar verticalmente o texto */
+  margin-top: 20px; /* Margem superior */
+}

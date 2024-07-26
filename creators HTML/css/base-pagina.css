@@ -1,0 +1,108 @@
+/************************************************/
+/***************base pagina**********************/ 
+/************************************************/
+
+
+
+/* o seletor * seleciona cada um dos elementos do HTML */
+* {
+  /* zerar as propriedades de espaçamento de todos os elemetnos fornece maior controle sobre o conteudo da pagina */
+  
+  padding: 0;
+  margin: 0;
+}
+
+
+html{
+  /* define o a fonte e/familia da fonte */
+  font-family: sans-serif, verdana, arial;
+  /* define o tamanho da fonte */
+  font-size: 16px;
+}
+
+/* seleciona o elemento com a classe "container" e define o estilo */
+.container{
+  /* define a cor de fundo do item selecionado */
+  background-color: lightslategray;
+  /* define o tamanho minimo da janela */
+  min-width: 800px;
+  /* define o tamanho maximo da janela */
+  max-width: 1200px;
+   /* essa propriedade vai centralizar o elemento 0 para superior e inferior, mesmo espaçamento nas laterais, que sera cauculado de forma automatica */
+  margin: 0 auto;
+}
+
+
+/************************************************/
+/**********************HEADER********************/
+/************************************************/
+/* seleciona o elemento com a classe "header" e define o estilo */
+header {
+    background-color: #51ABE7;
+  /* define a altura do item */
+    height: 170px;
+    min-width: 800px;
+    max-width: 1200px;
+  }
+  
+  header figure {
+    padding: 10px 20px;
+    height: 100px;
+    width: 200px;
+    margin-right: 0;
+    padding-right: 0;
+    float: left;
+  }
+  
+  header figure img {
+    height: 100px;
+    width: 100%;
+  }
+  
+
+  
+  nav{
+    background-color: #2E6081;
+    height: 40px;  
+    float: left;
+    display: inline-block;
+    width: 100%;
+  
+  }
+  
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    padding-left: 35px ;
+  
+  }
+  
+  nav ul li a:link,
+  nav ul li a:visited{
+    padding: 0 10px;
+    width: 80px;
+    background-color: #12374f;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15%;
+  }
+.principal{
+  background-color: #51ABE7;
+  height: 800px;
+}
+
+.principal p{
+  text-align: center;
+  padding: 500px 500px;
+}
+
+  footer{
+    background-color: #2E6081;
+    height: 40px;  
+    text-align: right;
+    color: #fff;
+    align-items: right;
+  }

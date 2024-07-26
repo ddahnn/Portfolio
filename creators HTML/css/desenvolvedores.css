@@ -1,0 +1,213 @@
+/************************************************/
+/***************base pagina**********************/ 
+/************************************************/
+
+
+
+/* o seletor * seleciona cada um dos elementos do HTML */
+* {
+  /* zerar as propriedades de espaçamento de todos os elemetnos fornece maior controle sobre o conteudo da pagina */
+
+  padding: 0;
+  margin: 0;
+}
+
+
+html{
+  /* define o a fonte e/familia da fonte */
+  font-family: sans-serif, verdana, arial;
+  /* define o tamanho da fonte */
+  font-size: 16px;
+}
+
+/* seleciona o elemento com a classe "container" e define o estilo */
+.container{
+  /* define a cor de fundo do item selecionado */
+  background-color: #51ABE7;
+  /* define o tamanho minimo da janela */
+  min-width: 800px;
+  /* define o tamanho maximo da janela */
+  max-width: 1200px;
+   /* essa propriedade vai centralizar o elemento 0 para superior e inferior, mesmo espaçamento nas laterais, que sera cauculado de forma automatica */
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+/************************************************/
+/**********************HEADER********************/
+/************************************************/
+/* seleciona o elemento com a classe "header" e define o estilo */
+header {
+    background-color: #51ABE7;
+  /* define a altura do item */
+    height: 170px;
+
+  }
+
+  header figure {
+    padding: 10px 20px;
+    height: 100px;
+    width: 200px;
+    margin-right: 0;
+    padding-right: 0;
+    float: left;
+  }
+
+  header figure img {
+    height: 100px;
+    width: 100%;
+  }
+
+
+
+  .menu{
+    background-color: #2E6081;
+    height: 40px;  
+    display: inline-block;
+    width: 100%;
+
+  }
+
+  .menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    padding-left: 35px ;
+
+  }
+
+  .menu ul li a:link,
+  .menu ul li a:visited{
+    padding: 0 10px;
+    width: 80px;
+    background-color: #12374f;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15%;
+  }
+.principal{
+  background-color: #51ABE7;
+  height: 450px;
+  width: 600px;
+  padding: 0;
+  /* border: black 2px solid; */
+  float:left;
+}
+
+
+.carousel{
+  width: 500px;
+  height: 375px;
+  /* border: black 2px solid; */
+}
+.carousel img{
+  width: auto;
+  height:100%;
+  margin:20px;
+ /*  border:#12374f 2px solid; */
+}
+
+.carousel-caption d-none d-md-block{
+  color: black;
+  align-items: center;
+}
+
+.carousel-caption {
+  color: black;
+  text-align: center;
+}
+
+.carousel-caption h5 {
+  background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
+  display: inline-block;
+  padding: 5px;
+}
+
+.carousel-caption p {
+  background-color: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
+  display: inline-block;
+  padding: 5px;
+}
+
+.lista{
+ /*  background-color: red; */
+  float:right;
+  height: 400px;
+  width: 570px;
+}
+.lista h3{
+  color:#fff;
+  text-align: center;
+  background-color: darkblue;
+}
+
+.lista ul{
+/*   background-color: skyblue; */  
+  padding-left:25px;
+  list-style-type: circle;
+  
+}
+
+.lista ul li{
+ /*  background-color: green; */
+  color: #fff;
+  padding-top: 15px;
+  font-size: 17px;
+  
+}
+.social{
+/*   background-color: violet; */
+  float:left;
+  height:50px;
+  width:570px;
+  /* border: 2px black solid; */
+  margin-right: 0;
+}
+.social li{
+  list-style: none;
+  padding-left:74px;
+  display: inline-block;
+  font-size: 40px;
+  text-decoration: none;
+  transition: transform 0.5s color 0.5s;
+  
+}
+.face:hover{
+  color: #3b5998; 
+  transform: translateY(-10px);
+}
+
+.twitter:hover{
+  color: #0400eb;
+  transform: translateY(-10px);
+}
+.insta:hover{
+  color: #ffaf45;
+  transform: translateY(-10px);
+}
+
+.whats:hover{
+  color: #25D366;
+  transform: translateY(-10px);
+}
+
+  
+footer{
+  background-color: #2E6081;
+  height: 50px;
+  width: 100%;
+  display: inline-block;
+
+
+}
+
+footer p{
+  text-align: right;
+  color: #fff;
+  width: 100%;
+/*   border:2px black solid; */
+  padding: 10px 0;
+}

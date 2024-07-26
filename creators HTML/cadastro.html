@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cadastro</title>
+    <link href='css/base-pagina.css' rel="stylesheet" type='text/css'>
+    <link href='css/cadastro.css' rel="stylesheet" type='text/css'>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <figure>
+          <img src="img/logo.png" alt="logo">
+        </figure>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pag_comandos_basicos.html">Comandos Básicos</a></li>
+            <li><a href="videos.html">Video Aulas</a></li>
+            <li><a href="desenvolvedores.html">Sobre os Creators</a></li>
+            <li><a href="depoimentos.html">Depoimentos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav> 
+      </header>
+   
+      <section class='cadastro'>
+        <h1>Cadastro</h1>
+        <form name='Login' action='#' method='post' class='register'>
+          <div class='pessoal'>
+            <fieldset>            
+              <legend>Dados pessoais</legend>
+              <label for="nome">Nome: </label>
+              <!-- Campo de texto para nome completo -->
+              <input type='text' name='nome' id='nome' placeholder="Nome" required autofocus>
+              <label for="email" id="lemail">Email: </label>
+              <!-- Campo para entrada do e-mail -->
+              <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+              
+              <label for="senha" id=lsenha>Senha: </label>
+              <!-- Campo para senha -->
+              <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+              <!-- Campo de seleção para gênero -->
+              <label for='genero'>Gênero: </label>
+              <select name="genero" id="genero">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="NR">Prefiro não responder</option>
+                <option value="NB">Não-binarie</option>
+              </select>
+              <label for="data">Data de Nascimento: </label>
+              <!-- Campo de seleção para data de nascimento -->
+              <input type="date" name="data" id="data" min="1930-01-01" max="2024-07-10" required>
+               <label for="telefone">Telefone: </label>
+              <input type='tel' id='telefone' name='telefone' placeholder="Digite seu telefone" required>
+            </fieldset>
+          </div>
+            <div class='endereco'>
+              <fieldset>
+                <legend>Endereço</legend>
+                <label for="endereco">Endereço: </label>
+                <!-- Campo de texto para endereço -->
+                <input type="text" name="endereco" id="endereco" required placeholder='Rua/Av.'>
+               
+                <label for="numero">Número: </label>
+                <!-- Campo de texto para número da casa -->
+                <input type="text" name="numero" id="numero" required placeholder='Nº da casa'>
+               
+                <label for="complemento">Complemento: </label>
+                <!-- Campo de texto para complemento -->
+                <input type="text" id='complemento' name='complemento' placeholder="Ex: apto 155">
+               
+                <label for="bairro">Bairro: </label>
+                <!-- Campo de texto para bairro -->
+                <input type="text" name="bairro" id="bairro" required placeholder='Bairro'>
+                
+                <label for="cidade">Cidade: </label>
+                <!-- Campo de texto para cidade -->
+                <input type="text" id='cidade' name='cidade' placeholder='Cidade' required>
+                
+                <label for="estado">Estado: </label>
+                <!-- Campo de texto para estado -->
+                <input type="text" id='estado' name='estado' placeholder='Estado' required>
+              </fieldset>
+            </div>
+            <div class='interesse'>
+              <fieldset>
+                <legend>Interesses</legend>
+              <!-- Campo de seleção para interesses -->
+                <label for="noticias">  Notícias </label> 
+                <input type="checkbox" name="noticias" value="noticias" id="noticias">
+                <label for="estudo">| Estudo </label>
+                <input type="checkbox" name="estudo" value="estudo" id="estudo">
+                <label for="colaborador">| Colaborador </label>
+                <input type="checkbox" name="colaborador" value="colaborador" id="colaborador">
+                <label for="tecnologias">| Tecnologia  </label>
+                <input type="checkbox" name="tecnologias" value="tecnologias" id="tecnologias">
+            
+              </fieldset>
+            </div>
+            <div class='termos'>
+              <fieldset>
+                <legend>Termos e condições</legend>
+                <!-- Campo de confirmação de termos e condições -->
+                
+                <input type="checkbox" name="termos" value="termos" id="termos" required>
+                <label for="termos">Eu concordo com os termos e condições </label>
+              </fieldset>
+              <fieldset>
+                <legend> atualizações</legend>
+                <label for='sim'>Deseja receber atualizações da página no e-mail?</label>
+               <label for="sim">Sim</label> 
+                <input type="radio" id="sim" name="atualizacoes" value="sim">
+                <label for="nao">  |  Não</label>
+                <input type="radio" id="nao" name="atualizacoes" value="nao">
+              </fieldset>
+            <input type='submit' id="botao">
+          </div>
+        </form>
+      </section>
+      <footer>
+        <p>Todos os direitos reservados</p>
+      </footer>
+    </div>
+  </body>
+</html>

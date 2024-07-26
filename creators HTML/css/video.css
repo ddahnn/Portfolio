@@ -1,0 +1,201 @@
+/************************************************/
+/***************base pagina**********************/ 
+/************************************************/
+
+
+
+/* o seletor * seleciona cada um dos elementos do HTML */
+* {
+  /* zerar as propriedades de espaçamento de todos os elemetnos fornece maior controle sobre o conteudo da pagina */
+
+  padding: 0;
+  margin: 0;
+}
+
+
+html{
+  color: #fff;
+  /* define o a fonte e/familia da fonte */
+  font-family: sans-serif, verdana, arial;
+  /* define o tamanho da fonte */
+  font-size: 16px;
+}
+
+/* seleciona o elemento com a classe "container" e define o estilo */
+.container{
+  /* define a cor de fundo do item selecionado */
+  background-color: #51ABE7;
+  /* define o tamanho minimo da janela */
+  min-width: 800px;
+  /* define o tamanho maximo da janela */
+  max-width: 1200px;
+   /* essa propriedade vai centralizar o elemento 0 para superior e inferior, mesmo espaçamento nas laterais, que sera cauculado de forma automatica */
+  margin: 0 auto;
+  height: 1400px;
+}
+
+
+/************************************************/
+/**********************HEADER********************/
+/************************************************/
+/* seleciona o elemento com a classe "header" e define o estilo */
+header {
+    background-color: #51ABE7;
+  /* define a altura do item */
+    height: 170px;
+    min-width: 800px;
+    max-width: 1200px;
+  }
+
+  header figure {
+    padding: 10px 20px;
+    height: 100px;
+    width: 200px;
+    margin-right: 0;
+    padding-right: 0;
+    float: left;
+  }
+
+  header figure img {
+    height: 100px;
+    width: 100%;
+  }
+
+
+
+  nav{
+    background-color: #2E6081;
+    height: 40px;  
+    float: left;
+    display: inline-block;
+    width: 100%;
+
+  }
+
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    padding-left: 35px ;
+
+  }
+
+  nav ul li a:link,
+  nav ul li a:visited{
+    padding: 0 10px;
+    width: 80px;
+    background-color: #12374f;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    /* define como Bold a fonte */
+    font-weight: bold;
+    border-radius: 15%;
+  }
+.principal{
+  background-color: #51ABE7;
+  float:left;
+}
+.html h2{
+/*   background-color: red; */
+  font-size: 20px;
+  text-align: center;
+  padding:10px 0 ;
+  
+
+}
+.youtube-h{
+  /* background-color: red; */
+  padding-left: 8%;
+  height: 200px;
+  width: 400px;
+  padding: 20px ;
+}
+.youtube-h iframe{
+  height: 100%;
+  width: 100%;
+  align-items:center;
+}
+
+.css{
+  color: #fff;
+  float:right;
+  padding-right: 45px;
+/*   background-color: gray;
+ */
+  height: 300px;
+}
+.css h2{
+  /* background-color: yellow; */
+  text-align: left;
+  font-size: 20px;
+  padding:10px 0;
+}
+.youtube-c{
+/*   background-color: blue;
+ */  height: 200px;
+  width: 400px;
+  padding-left: 8%;
+  padding: 20px;
+}
+.youtube-c iframe{
+  height: 100%;
+  width: 100%;
+}
+
+footer{
+  display: inline-block;
+  background-color: #2E6081;
+  height: 40px;  
+  text-align: right;
+  color: #fff;
+  align-items: right;
+  width: 1200px;
+  
+  
+}
+
+.aulas_avancadas{
+  color: #fff;
+  background-color: #51ABE7;
+  float: inline-start;
+  width: 1180px;
+  height: 200px;
+  margin-top: 500px;
+  padding-left: 20px;
+
+}
+.aulas_avancadas img{
+  mix-blend-mode: multiply;
+}
+.youtube-avancadas{
+  height: 150px;
+  width: 250px;
+  padding-left: 10px;
+
+  display: flex;
+ 
+}
+.youtube-avancadas iframe{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+.trilhas{
+  background-color: #51ABE7;
+  float: inline-start;
+  width: 1180px;
+  height: 200px;
+  margin-top: 80px;
+  padding-left: 20px;
+
+}
+.trilhas img{
+   mix-blend-mode: multiply;
+}
+
+ul{
+  list-style: inside square;
+  
+  
+}

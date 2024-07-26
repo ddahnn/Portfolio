@@ -1,0 +1,214 @@
+/************************************************/
+/***************base pagina**********************/ 
+/************************************************/
+
+
+
+/* o seletor * seleciona cada um dos elementos do HTML */
+* {
+  /* zerar as propriedades de espaçamento de todos os elemetnos fornece maior controle sobre o conteudo da pagina */
+
+  padding: 0;
+  margin: 0;
+}
+
+
+html{
+  /* define o a fonte e/familia da fonte */
+  font-family: sans-serif, verdana, arial;
+  /* define o tamanho da fonte */
+  font-size: 16px;
+}
+
+.container{
+  /* define a cor de fundo do item selecionado */
+  background-color: #51ABE7;
+  /* define o tamanho minimo da janela */
+  min-width: 800px;
+  /* define o tamanho maximo da janela */
+  max-width: 1200px;
+   /* essa propriedade vai centralizar o elemento 0 para superior e inferior, mesmo espaçamento nas laterais, que sera cauculado de forma automatica */
+  margin: 0 auto;
+  height: 1450px;
+ 
+}
+
+
+/************************************************/
+/**********************HEADER********************/
+/************************************************/
+/* seleciona o elemento com a classe "header" e define o estilo */
+header {
+    background-color: #51ABE7;
+  /* define a altura do item */
+    height: 170px;
+    min-width: 800px;
+    max-width: 1200px;
+  }
+
+  header figure {
+    padding: 10px 20px;
+    height: 100px;
+    width: 200px;
+    margin-right: 0;
+    padding-right: 0;
+    float: left;
+  }
+
+  header figure img {
+    height: 100px;
+    width: 100%;
+  }
+
+
+
+  nav{
+    background-color: #2E6081;
+    height: 40px;  
+    float: left;
+    display: inline-block;
+    width: 100%;
+
+  }
+
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    padding-left: 35px ;
+
+  }
+
+  nav ul li a:link,
+  nav ul li a:visited{
+    padding: 0 10px;
+    width: 80px;
+    background-color: #12374f;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15%;
+  }
+
+
+.topo {
+
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  height:200px;
+  
+  }
+.topo p {
+  font-size:16px;
+  padding: 5px;
+}
+#destaque{
+  font-size: 20px;
+  font-style: italic;
+}
+
+.topo h1{
+  font-size: 30px;
+  background-color: #2f2fe9 ;
+  color: #fff;
+  width: auto; 
+  text-align: center;
+}
+
+.html {
+  float: left;
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 49%;
+  color: #fff;
+  height: 910px;
+  background-color: #2385e1;
+}
+.html img{
+  mix-blend-mode: multiply;
+}
+
+.html-lista {
+  /*padding-left: 20px;*/
+  list-style-position: inside;
+}
+
+.css {
+  color: #fff;
+  width: 49%;
+  height: 930px;
+  float: right;
+  padding-left: 10px;
+  background-color: #2385e1;
+}
+
+
+.css img{
+  mix-blend-mode: multiply;
+}
+
+
+
+
+
+table{
+  text-align: left;
+  width: 80%;
+  height: auto;
+  background-color: #2f2fe9 ;
+  border: 1px;
+}
+
+.thead{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.img_exemplo{
+  width: 80%;
+  height: auto;
+  margin-left: 30px;
+}
+.referencias{
+  width: 100%;
+  background-color: #51ABE7;
+  color: #fff;
+  height: 130px;
+  /* border: 2px black solid; */
+  display: inline-block;
+  
+
+}
+.referencias h4{
+  padding-top: 5px;
+  padding-left: 10px;
+  font-style: italic;
+  font-size:20px;
+  
+  
+}
+.referencias ul{
+  list-style: inside square;
+  padding: 10px;
+  /* border: 2px black solid; */
+}
+.referencias img{
+  mix-blend-mode: multiply;
+}
+
+footer{
+  display: inline-block;
+  background-color: #2E6081;
+  height: 50px;  
+  text-align: right;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 10px;
+/*   border: 2px black solid; */
+  width: 100%;
+
+
+}

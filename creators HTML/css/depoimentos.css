@@ -1,0 +1,181 @@
+/************************************************/
+/***************base pagina**********************/ 
+/************************************************/
+
+
+
+/* o seletor * seleciona cada um dos elementos do HTML */
+* {
+  /* zerar as propriedades de espaçamento de todos os elemetnos fornece maior controle sobre o conteudo da pagina */
+
+  padding: 0;
+  margin: 0;
+}
+
+
+html{
+  /* define o a fonte e/familia da fonte */
+  font-family: sans-serif, verdana, arial;
+  /* define o tamanho da fonte */
+  font-size: 16px;
+}
+
+/* seleciona o elemento com a classe "container" e define o estilo */
+.container{
+  /* define a cor de fundo do item selecionado */
+  background-color: #51ABE7;
+  /* define o tamanho minimo da janela */
+  min-width: 800px;
+  /* define o tamanho maximo da janela */
+  max-width: 1200px;
+   /* essa propriedade vai centralizar o elemento 0 para superior e inferior, mesmo espaçamento nas laterais, que sera cauculado de forma automatica */
+  margin: 0 auto;
+  padding:0 0;
+}
+
+
+/************************************************/
+/**********************HEADER********************/
+/************************************************/
+/* seleciona o elemento com a classe "header" e define o estilo */
+header {
+    background-color: #51ABE7;
+  /* define a altura do item */
+    height: 170px;
+    width:100%;
+  }
+
+  header figure {
+    padding: 10px 20px;
+    height: 100px;
+    width: 200px;
+    margin-right: 0;
+    padding-right: 0;
+    float: left;
+  }
+
+  header figure img {
+    height: 100px;
+    width: 100%;
+  }
+
+
+
+  nav{
+    background-color: #2E6081;
+    height: 40px;  
+    display: inline-block;
+    width: 100%;
+
+  }
+
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    padding-left: 35px ;
+
+  }
+
+  nav ul li a:link,
+  nav ul li a:visited{
+    padding: 0 10px;
+    width: 80px;
+    background-color: #12374f;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 15%;
+  }
+.principal{
+  background-color: #51ABE7;
+  height: 500px;
+  color: #fff;
+}
+
+.principal p{
+  text-align: center;
+ 
+  color: #fff;
+}
+
+.carousel{
+
+  width: 400px;
+  height: auto;
+}
+.carousel img{
+  width: 800px;
+  height: auto;
+  margin:20px;
+}
+
+ 
+
+.quantidade{
+  float:  left;
+  
+ 
+}
+.quantidade p{
+  text-align: left;
+  color: #fff;
+  font-size: 20px;
+  font-style: bold;
+ 
+}
+.avaliacoes{
+  float: right;
+  width: 60%;
+  padding-right: 20px;
+  margin-top: 100px;
+}
+.depoimentos{
+  float: left;
+}
+.progress{
+  margin-top: 10px;
+  width: 90%;
+  float: right;
+  height:30px;
+  border: 2px;
+}
+.carousel-caption d-none d-md-block{
+  color: black;
+  align-items: center;
+}
+
+.carousel-caption {
+  color: black;
+  text-align: center;
+}
+
+.carousel-caption h5 {
+  background-color: rgba(255, 255, 255, 0.6); /* Fundo branco com transparência */
+  display: inline-block;
+  padding: 5px;
+}
+
+.carousel-caption p {
+  background-color: rgba(255, 255, 255, 0.6); /* Fundo branco com transparência */
+  display: inline-block;
+  padding: 5px;
+}
+
+#depoliacao{
+  text-align: center;
+  background-color: darkblue;
+}
+
+footer{
+  background-color: #2E6081;
+  height: 40px;  
+  text-align: right;
+}
+footer p{
+  color:#fff;
+  text-align: right;
+  width: 100%;
+  padding: 7px 5px;
+}

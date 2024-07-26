@@ -1,0 +1,112 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+<html lang='pt-br'> <!-- Define o idioma do documento como português do Brasil -->
+<head> <!-- Cabeçalho do documento -->
+  <meta charset="utf-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width"> <!-- Configura a largura da página para se ajustar à largura da tela do dispositivo -->
+  <title>Depoimentos</title> <!-- Título da página -->
+  <!-- Link para o CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Link para o arquivo CSS personalizado -->
+  <link href='css/depoimentos.css' rel="stylesheet" type='text/css'>
+  
+</head>
+<body> <!-- Corpo do documento -->  
+  <div class="container"> <!-- Container do Bootstrap para centralizar e aplicar padding -->
+    <header> <!-- Cabeçalho do documento -->
+      <figure> <!-- Elemento de figura para agrupar a imagem -->
+        <img src="img/logo.png" alt="logo"> <!-- Imagem do logo -->
+      </figure>
+      <nav> <!-- Navegação principal -->
+        <ul> <!-- Lista de links de navegação -->
+          <li><a href="index.html">Home</a></li> <!-- Link para a página inicial -->
+          <li><a href="pag_comandos_basicos.html">Comandos Básicos</a></li> <!-- Link para a página de comandos básicos -->
+          <li><a href="videos.html">Video Aulas</a></li> <!-- Link para a página de video aulas -->
+          <li><a href="desenvolvedores.html">Sobre os Creators</a></li> <!-- Link para a página sobre os criadores -->
+          <li><a href="#">Depoimentos</a></li> <!-- Link para a página de depoimentos -->
+          <li><a href="#">Contato</a></li> <!-- Link para a página de contato -->
+        </ul>
+      </nav> 
+    </header>
+    <section class="principal"> <!-- Seção principal da página -->
+      <div id="depoliacao">
+        <h1>DEPOIMENTOS & AVALIAÇÕES</h1>
+      </div>
+      <div class="depoimentos">
+        <!-- Carrossel do Bootstrap -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators"> <!-- Indicadores do carrossel -->
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li> <!-- Indicador do primeiro slide -->
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> <!-- Indicador do segundo slide -->
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> <!-- Indicador do terceiro slide -->
+          </ol>
+          <div class="carousel-inner"> <!-- Itens do carrossel -->
+            <div class="carousel-item active"> <!-- Primeiro item do carrossel (ativo) -->
+              <img class="d-block w-100" src="img/1.jpg" alt="Isadora"> <!-- Imagem do primeiro item -->
+              <div class="carousel-caption d-none d-md-block"> <!-- Legenda do primeiro item -->
+                <h5>Mariana</h5> <!-- Título da legenda -->
+                <p>O pessoal da Creators sempre é muito solícito e os materiais estão sempre atualizados!</p> <!-- Descrição da legenda -->
+              </div>
+            </div>
+            <div class="carousel-item"> <!-- Segundo item do carrossel -->
+              <img class="d-block w-100" src="img/2.jpg" alt="Daniel"> <!-- Imagem do segundo item -->
+              <div class="carousel-caption d-none d-md-block"> <!-- Legenda do segundo item -->
+                <h5>Jorge</h5> <!-- Título da legenda -->
+                <p>As vídeo aulas e trilhas de conhecimento são dinâmicas e fáceis de entender</p> <!-- Descrição da legenda -->
+              </div>
+            </div>
+            <div class="carousel-item"> <!-- Terceiro item do carrossel -->
+              <img class="d-block w-100" src="img/3.jpg" alt="Victor"> <!-- Imagem do terceiro item -->
+              <div class="carousel-caption d-none d-md-block"> <!-- Legenda do terceiro item -->
+                <h5>Lucas</h5> <!-- Título da legenda -->
+                <p>Já fiz todos os cursos indicados. Com o Creators estudar fica mais fácil!!</p> <!-- Descrição da legenda -->
+              </div>
+            </div>
+          </div>
+          <!-- Controles do carrossel -->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- Ícone de controle anterior -->
+            <span class="sr-only">Anterior</span> <!-- Texto alternativo para acessibilidade -->
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span> <!-- Ícone de controle próximo -->
+            <span class="sr-only">Próximo</span> <!-- Texto alternativo para acessibilidade -->
+          </a>
+        </div>
+      </div>
+      <div class="avaliacoes" >
+        
+        <div class="quantidade">
+          <p>35</p>
+          <p>109</p>
+          <p>500</p>
+          <p>+1k</p>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">2 ESTRELAS</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">3 ESTRELAS</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">4 ESTRELAS</div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">5 ESTRELAS</div>
+        </div>
+      </div>
+        
+
+
+      
+    </section>
+    <footer> <!-- Rodapé da página -->
+      <p>Todos os direitos reservados</p> <!-- Texto do rodapé -->
+    </footer>
+  </div>
+  <!-- Bibliotecas do Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
